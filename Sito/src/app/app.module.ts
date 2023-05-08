@@ -9,6 +9,7 @@ import { Card2Component } from './card2/card2.component';
 import { Card3Component } from './card3/card3.component';
 import { Card4Component } from './card4/card4.component';
 import { Card5Component } from './card5/card5.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { Card5Component } from './card5/card5.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
