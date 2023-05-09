@@ -1,5 +1,6 @@
-<p>Galaxy-Eyes-Full-Armor-Photon-Dragon</p>
-<h2>Basic Request</h2>
+<h1>Galaxy Eyes Full Armor Photon Dragon</h1>
+
 <button type="button" (click)="makeRequest()">Make Request</button>
-<div *ngIf="loading">loading...</div>
-<pre>{{data | json}}</pre>
+<div *ngIf="loading" style = "color: #D9946C;">loading...</div>
+<img *ngIf="data" src="{{data.data[0].card_images[0].image_url}}" >
+

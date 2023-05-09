@@ -1,8 +1,13 @@
-<p>Blue-Eyes-Ultimate-Dragon</p>
+<h1>Blue Eyes Ultimate Dragon</h1>
 
-<h2>Basic Request</h2>
 <button type="button" (click)="makeRequest()">Make Request</button>
-<div *ngIf="loading">loading...</div>
-<pre>{{data | json}}</pre>
+<div *ngIf="loading" style = "color: #D9946C;">loading...
+</div>
+<img *ngIf="data" src="{{data.data[0].card_images[0].image_url}}" >
+<img *ngIf="data" src="{{data.data[0].card_sets[0].set_name}}" >
+<img *ngIf="data" src="{{data.data[0].card_sets[0].set_code}}" >
+<img *ngIf="data" src="{{data.data[0].card_sets[0].set_rarity}}" >
+
+
 
 
