@@ -5,6 +5,7 @@ import { Card2Component } from './card2/card2.component';
 import { Card3Component } from './card3/card3.component';
 import { Card4Component } from './card4/card4.component';
 import { Card5Component } from './card5/card5.component';
+import { GenericComponent } from './generic/generic.component';
 
 const routes: Routes = [
   {path: 'Blue-Eyes-Ultimate-Dragon',component: Card1Component },
@@ -12,6 +13,8 @@ const routes: Routes = [
   {path: 'Emperor-of-Lightning',component: Card3Component},
   {path: 'Dark-Blade-the-Dragon-Knight',component: Card4Component},
   {path: 'Galaxy-Eyes-Full-Armor-Photon-Dragon',component: Card5Component},
+  {path: 'generic/:id', component: GenericComponent }
+
 ];
 
 @NgModule({

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
 import { HttpClient} from '@angular/common/http'
 import { Root } from '../card1.module';
@@ -12,6 +12,7 @@ export class Card1Component {
     data: Root | undefined;
     loading: boolean | undefined;
     o :Observable<Root> | undefined;
+    
     constructor(public http: HttpClient) {}
 
     makeRequest(): void {
