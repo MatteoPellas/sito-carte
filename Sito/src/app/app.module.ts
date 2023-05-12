@@ -10,6 +10,7 @@ import { Card3Component } from './card3/card3.component';
 import { Card4Component } from './card4/card4.component';
 import { Card5Component } from './card5/card5.component';
 import { HttpClientModule } from '@angular/common/http';
+import { GenericComponent } from './generic/generic.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { HttpClientModule } from '@angular/common/http';
     Card2Component,
     Card3Component,
     Card4Component,
-    Card5Component
+    Card5Component,
+    GenericComponent
   ],
   imports: [
     BrowserModule,

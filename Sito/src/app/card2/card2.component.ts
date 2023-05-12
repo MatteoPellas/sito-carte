@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
 import { Observable } from 'rxjs';
-import { Root } from '../card1.module';
+import { Root } from '../card1.model';
 
 @Component({
   selector: 'app-card2',

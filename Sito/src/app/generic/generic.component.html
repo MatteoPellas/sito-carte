@@ -1,12 +1,8 @@
 <h1>Generic</h1>
 
-<button type="button" (click)="makeRequest()">Make Request</button>
-<div *ngIf="loading" style = "color: #D9946C;">loading...
-</div>
-<div class = "">
-    <img *ngIf="data" src="{{data.data[0].card_images[0].image_url}}" >
+
+<div  *ngIf="data" >
+    <img src="{{data.data[0].card_images[0].image_url}}" >
 </div>
 
-<img *ngIf="data" src="{{data.data[0].card_sets[0].set_name}}" >
-<img *ngIf="data" src="{{data.data[0].card_sets[0].set_code}}" >
-<img *ngIf="data" src="{{data.data[0].card_sets[0].set_rarity}}" >
+
